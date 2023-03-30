@@ -10,7 +10,7 @@ class SpybeanClassnotfoundApplicationTests {
     // Creating a MockBean would work. Creating SpyBeans of services would work.
     // Just this specific case of creating a SpyBean for a repository interface that is required in a @Configuration class fails.
     @SpyBean
-    private SpybeanClassnotfoundRepository spybeanClassnotfoundRepository;
+    private SomeRepository someRepository;
 
     // Try to run this test:
     @Test

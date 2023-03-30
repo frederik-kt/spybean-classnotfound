@@ -2,13 +2,13 @@ package com.example.spybeanclassnotfound;
 
 public class TestServlet extends jakarta.servlet.http.HttpServlet {
 
-    private final SpybeanClassnotfoundRepository spybeanClassnotfoundRepository;
+    private final SomeRepository someRepository;
 
-    public TestServlet(SpybeanClassnotfoundRepository spybeanClassnotfoundRepository) {
-        this.spybeanClassnotfoundRepository = spybeanClassnotfoundRepository;
+    public TestServlet(SomeRepository someRepository) {
+        this.someRepository = someRepository;
     }
 
     public void someMethod() {
-        System.out.println(spybeanClassnotfoundRepository.findAll());
+        System.out.println(someRepository.findAll());
     }
 }
